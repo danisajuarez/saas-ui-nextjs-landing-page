@@ -1,4 +1,4 @@
-import { transparentize, mode } from '@chakra-ui/theme-tools'
+import { mode, transparentize } from '@chakra-ui/theme-tools'
 
 const Features = {
   parts: ['container', 'title', 'description', 'icon'],
@@ -21,7 +21,7 @@ const Features = {
       mb: 3,
       mr: 3,
       p: 2,
-      bg: 'primary.400',
+      bg: 'brand.400',
       color: 'white',
       float: 'left',
     },
@@ -30,7 +30,7 @@ const Features = {
     subtle: {},
     solid: {
       container: {
-        bg: 'primary.400',
+        bg: 'brand.400',
       },
       secondaryAction: {
         colorScheme: 'white',
@@ -70,10 +70,10 @@ export const Feature = {
       mr: 4,
       p: 2,
       bg: mode(
-        'primary.100',
-        transparentize('primary.500', 0.2)(props.theme)
+        'brand.100',
+        transparentize('brand.500', 0.2)(props.theme),
       )(props),
-      color: mode('primary.700', 'primary.400')(props),
+      color: mode('brand.700', 'brand.400')(props),
       float: 'left',
     },
   }),
